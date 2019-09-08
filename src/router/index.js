@@ -11,6 +11,7 @@ const { homeName, requireLogin } = config
 Vue.use(Router)
 const router = new Router({
   routes,
+  // base: 'kiwi-ui',
   mode: 'history'
 })
 const LOGIN_PAGE_NAME = 'login'
