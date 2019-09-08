@@ -1,5 +1,5 @@
 ## 环境配置
-进入```/config/index.js```文件，```backend```配置后端api接口域名，```loginUrl```配置单点登录域名，系统已经集成了```京东sso```单点登录系统，直接配置域名地址即可，配置分```development```(开发)、```test```(测试)、```production```(生产)三个维度，需要分别配置，使用```npm run build```编译部署生产环境时，默认使用```production```(生产)配置。
+进入```/config/index.js```文件，```backend```配置后端api接口域名，```loginUrl```配置单点登录域名，系统已经集成了```基于cookies```的单点登录系统，直接配置域名地址即可，配置分```development```(开发)、```test```(测试)、```production```(生产)三个维度，需要分别配置，使用```npm run build```编译部署生产环境时，默认使用```production```(生产)配置。
 
 ```javascript
 let env = process.env.NODE_ENV || 'development'
