@@ -5,6 +5,8 @@
 
 <script>
 import hljs from 'highlight.js'
+import config from '@/config'
+const { baseContext } = config
 
 const codeStyles = ['iview-code', 'monokai-sublime', 'atom-one-dark']
 
@@ -45,7 +47,8 @@ export default {
     let head = document.getElementsByTagName('head')[0]
     let linkTag = document.createElement('link')
     linkTag.id = this.codeStyle
-    linkTag.href = `/css/${this.codeStyle}.css`
+    let baseUrl = baseContext && ('/' + baseContext) || ''
+    linkTag.href = `${baseUrl}/css/${this.codeStyle}.css`
     linkTag.setAttribute('rel', 'stylesheet')
     linkTag.setAttribute('media', 'all')
     linkTag.setAttribute('type', 'text/css')

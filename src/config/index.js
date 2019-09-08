@@ -26,6 +26,10 @@ export default {
     }
   },
   /**
+   * 二级域名
+   */
+  baseContext: 'kiwi-ui',
+  /**
    * 是否从后端获取菜单权限
    * 如果设置为false，将没有菜单权限控制，路由中申明的所有菜单都可以看到
    * 如果设置为true，需要在/src/api/data.js#getUserInfo方法中从后端获取菜单权限

@@ -6,12 +6,12 @@ import iView from 'iview'
 import { setToken, getToken, canTurnTo } from '@/libs/util'
 import config from '@/config'
 import envConf from '../../config'
-const { homeName, requireLogin } = config
+const { homeName, requireLogin, baseContext } = config
 
 Vue.use(Router)
 const router = new Router({
   routes,
-  // base: 'kiwi-ui',
+  base: baseContext || '/',
   mode: 'history'
 })
 const LOGIN_PAGE_NAME = 'login'
