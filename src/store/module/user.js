@@ -1,6 +1,6 @@
 import { getUserInfo } from '@/api/data'
 import { setToken, getToken, request } from '@/libs/util'
-
+import avator from '@/assets/images/defaultAvator.png'
 export default {
   state: {
     erp: '',
@@ -50,7 +50,7 @@ export default {
         try {
           getUserInfo().then(res => {
             const data = res.data
-            commit('setAvator', data.avatarUrl || '/img/defaultAvator.png')
+            commit('setAvator', data.avatarUrl || avator)
             commit('setUserName', data.userName)
             commit('setErp', data.erp)
             commit('setAccess', data.access || [])
