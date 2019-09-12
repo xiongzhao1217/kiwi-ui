@@ -8,7 +8,7 @@
         data () {
             return {
               site: 1,
-              siteMapper: {1: '主站', 2: 'B中台', 3: '大客'},
+              siteMapper: {1: '商品系统', 2: '订单系统', 3: '库存系统'},
               city: 2,
               cityMapper: [[1, '北京'], [2, '上海'], [3, '广州']],
             }

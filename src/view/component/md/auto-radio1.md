@@ -7,7 +7,7 @@
         data () {
             return {
               site: 3,
-              siteMapper: {1: '主站', 2: 'B中台', 3: '大客'}
+              siteMapper: {1: '商品系统', 2: '订单系统', 3: '库存系统'}
             }
         }
     }
