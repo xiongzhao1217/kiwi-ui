@@ -29,6 +29,7 @@ import AutoSplit from './components/_comps/AutoSplit.vue'
 import Markdown from './components/_comps/Markdown.vue'
 import CodeView from './components/_comps/CodeView.vue'
 import VueHighlightJS from 'vue-highlightjs'
+import {showModal} from './components/_comps/modals'
 
 // 实际打包时应该不引入mock
 /* eslint-disable */
@@ -64,6 +65,10 @@ Vue.config.productionTip = false
  * @description 全局注册应用配置
  */
 Vue.prototype.$config = config
+/**
+ * @description 全局注册showModal
+ */
+Vue.prototype.$showModal = showModal
 /**
  * 注册指令
  */
