@@ -7,6 +7,9 @@
 
 export default {
   props: ['path', 'codeStyle'],
+  mounted () {
+    $('.ivu-modal-body').attr('style', 'background-color: #f7f7f7')
+  },
   methods: {
     async onOk (close) {
       close()
@@ -14,8 +17,3 @@ export default {
   }
 }
 </script>
-<style>
-.ivu-modal-body {
-  background-color: #f7f7f7
-}
-</style>
