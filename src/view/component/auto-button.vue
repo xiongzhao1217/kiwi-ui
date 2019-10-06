@@ -7,7 +7,6 @@
   <Card>
     <Row>
       <Col span="12" style="margin-top: 12px">
-        <AutoButton>default</AutoButton>
         <AutoButton type="primary">primary</AutoButton>
         <AutoButton type="info">info</AutoButton>
         <AutoButton type="success">success</AutoButton>
