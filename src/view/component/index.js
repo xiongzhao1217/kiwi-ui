@@ -45,7 +45,7 @@ export default [{
     icon: 'ios-list-box-outline',
     title: 'Markdown'
   },
-  component: () => import('./empty.vue')
+  component: () => import('./example-markdown.vue')
 }, {
   path: 'modal',
   name: 'modal',
@@ -53,7 +53,7 @@ export default [{
     icon: 'ios-photos-outline',
     title: 'Modal 弹出层'
   },
-  component: () => import('./empty.vue')
+  component: () => import('./auto-modal.vue')
 }, {
   path: 'ztree',
   name: 'ztree',
