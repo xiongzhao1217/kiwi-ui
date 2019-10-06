@@ -32,7 +32,7 @@
 </div>
 </template>
 <script>
-// import MemberEditModal from './memberEditModal'
+import MemberEditModal from './memberEditModal'
 export default {
   data () {
     return {
