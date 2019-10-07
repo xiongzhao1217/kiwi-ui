@@ -20,3 +20,24 @@ kiwi中文译为几维鸟，是一种翅膀退化的鸟类，网上有一个关�
 
 ## 文档地址
 [kiwi-ui文档1.0](https://xiongzhao1217.github.io/kiwi-ui)
+
+## 快速开始
+获取最新的kiwi-ui代码(master分支)
+~~~shell
+git clone -b master https://github.com/xiongzhao1217/kiwi-ui.git
+~~~
+
+然后进入项目目录
+~~~shell
+cd kiwi-ui
+~~~
+
+安装依赖并启动项目
+~~~shell
+// 配置淘宝镜像(官方镜像国内访问慢)
+npm config set registry https://registry.npm.taobao.org
+// 安装依赖
+npm install
+// 启动项目
+npm run dev
+~~~
