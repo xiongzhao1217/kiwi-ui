@@ -41,3 +41,11 @@ npm install
 // 启动项目
 npm run dev
 ~~~
+
+生产环境构建
+~~~shell
+npm run build
+~~~
+
+## 许可证
+[MIT](http://opensource.org/licenses/MIT)
