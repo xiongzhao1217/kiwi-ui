@@ -26,7 +26,7 @@
       <Col span="12" class="col-right" :style="{height: tree1codeHeight}">
         <CodeView style="margin-bottom: 24px" path="/component/md/ztree1.md" title="基本用法" code-style="iview-code"/>
         <div class="example-code-more">
-          <a v-if='tree1expand' title="隐藏代码" type="text" @click="expandCodeChange('tree1expand', 'tree1codeHeight', 520)"><Icon type="ios-arrow-up" size="17"/></a>
+          <a v-if='tree1expand' title="隐藏代码" type="text" @click="expandCodeChange('tree1expand', 'tree1codeHeight', 538)"><Icon type="ios-arrow-up" size="17"/></a>
           <a v-else type="text" title="查看代码" @click="expandCodeChange('tree1expand', 'tree1codeHeight')"><Icon type="ios-arrow-down" size="17"/></a>
         </div>
       </Col>
@@ -55,7 +55,7 @@
       <Col span="12" class="col-right" :style="{height: tree2codeHeight}">
         <CodeView style="margin-bottom: 24px" path="/component/md/ztree2.md" title="勾选节点" code-style="iview-code"/>
         <div class="example-code-more">
-          <a v-if='tree2expand' title="隐藏代码" type="text" @click="expandCodeChange('tree2expand', 'tree2codeHeight', 455)"><Icon type="ios-arrow-up" size="17"/></a>
+          <a v-if='tree2expand' title="隐藏代码" type="text" @click="expandCodeChange('tree2expand', 'tree2codeHeight', 473)"><Icon type="ios-arrow-up" size="17"/></a>
           <a v-else type="text" title="查看代码" @click="expandCodeChange('tree2expand', 'tree2codeHeight')"><Icon type="ios-arrow-down" size="17"/></a>
         </div>
       </Col>
@@ -106,8 +106,8 @@ export default {
       tree1expand: false,
       tree2expand: false,
       tree3expand: false,
-      tree1codeHeight: '520px',
-      tree2codeHeight: '455px',
+      tree1codeHeight: '538px',
+      tree2codeHeight: '473px',
       tree3codeHeight: '545px',
       data1: [
         {id: 1, name: '一级节点1'},
