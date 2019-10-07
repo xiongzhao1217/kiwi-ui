@@ -15,7 +15,7 @@ export default {
   /**
    * @description 默认打开的首页的路由name值，默认为home
    */
-  homeName: 'home',
+  homeName: 'started',
   /**
    * @description 需要加载的插件
    */
@@ -28,7 +28,7 @@ export default {
   /**
    * 二级域名
    */
-  baseContext: '',
+  baseContext: 'kiwi-ui',
   /**
    * 是否从后端获取菜单权限
    * 如果设置为false，将没有菜单权限控制，路由中申明的所有菜单都可以看到
