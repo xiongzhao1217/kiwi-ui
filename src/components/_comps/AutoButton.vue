@@ -36,11 +36,13 @@ export default {
   },
   methods: {
     async click () {
+      // 传递点击事件
+      this.$emit('click')
       // 校验表单
       this.valid ? await util.validateForm(this.getForm()) && (this.callLoad() || true) || this.$Message.error('表单验证失败') : this.callLoad()
     },
     callLoad () {
-      let p = this.load()
+      let p = this.load && this.load()
       if (!p || !p.then) return
       util.updateLoading(p, v => { this.loading = v })
     },

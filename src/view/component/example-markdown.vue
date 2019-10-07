@@ -7,7 +7,7 @@
   <Card>
     <Row>
       <Col span="12" style="margin-top: 12px">
-        <Markdown path="/component/md/markdown-left1.md" :code-style="codeStyle"/>
+        <Markdown path="/component/md/markdown-left1.md" code-style="iview-code"/>
         <Divider orientation="left">路由直接渲染</Divider>
         <div class="example-desc">
         <p>• 通过在路由中指定<code>md</code>文件路径，实现对md文件的自动渲染。</p>
@@ -34,7 +34,7 @@
   <Card style="margin-top: 25px">
     <Row>
       <Col span="12" style="margin-top: 12px">
-        <Markdown path="/component/md/markdown-left1.md" :code-style="codeStyle"/>
+        <Markdown path="/component/md/markdown-left1.md" code-style="iview-code"/>
         <Divider orientation="left">Markdown组件</Divider>
         <div class="example-desc">
         <p>• <code>path</code>属性用于指定<code>md</code>文件的路径，相对于<code>view</code>文件夹的路径。</p>
