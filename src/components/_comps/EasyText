@@ -1,0 +1,12 @@
+<template>
+  <span v-if="!value || value.length <= +maxLength">{{value}}</span>
+  <Tooltip v-else :content="value" transfer :max-width="300">{{value.substring(0, +maxLength)}}...</Tooltip>
+</template>
+<script>
+export default {
+  props: {
+    value: String,
+    maxLength: Number | String
+  }
+}
+</script>
